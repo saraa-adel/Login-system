@@ -1,0 +1,86 @@
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="../images/icons8-login-32 (1).png" type="image/x-icon">
+     <link rel="stylesheet" href="../css/all.min.css">
+     <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/style.css">
+     <link rel="stylesheet" href="../css/media.css">
+     <title>Sign up</title>
+</head>
+<body>
+     <div class="login position-relative">
+          <div class="layer position-absolute">
+               <div class="bg-layer-one position-absolute">
+                    <div class="bg-layer-two position-absolute d-flex flex-column">
+                         <div class="bg-layer-three position-absolute d-flex flex-column">
+                              <div class="login-content position-relative">
+                                   <div class="content-layer text-white text-center position-absolute d-flex flex-column justify-content-center align-items-center">
+                                        <h6 class="fs-1 pb-3 fw-normal">SIGN UP</h6>
+                                        <h3 class="fs-5 w-50 fw-normal">Create your account</h3>
+                                   </div>
+                              </div>
+                              <div class="login-form pb-4 text-white d-flex flex-column justify-content-center align-items-center"> 
+                                   <div class="w-75 fs-5">
+                                        <div class="input name font-one d-flex align-items-center">
+                                             <i class="fa-solid fa-user pe-2"></i>
+                                             <input oninput="validateName(this.value)" id="userName" class="w-100 form-control" type="text" placeholder="Name">
+                                        </div>
+                                        <div class="input email d-flex align-items-center pt-3 pb-1 font-one">
+                                             <i class="fa-solid fa-envelope pe-2"></i>
+                                             <input oninput="validateEmail(this.value)" id="userEmail" class="w-100 form-control" type="email" placeholder="Email">
+                                        </div>
+                                        <div class="input password d-flex align-items-center pt-3 pb-1 font-one">
+                                             <i class="fa-solid fa-lock pe-2"></i>
+                                             <input oninput="validatePassword(this.value)" id="userPassword" class="w-100 form-control" type="password" placeholder="Password">
+                                        </div>
+                                   </div>
+                                   <div class="w-75 d-flex flex-wrap justify-content-between align-items-center">
+                                        <div class="font-two pt-3 d-flex justify-content-between align-items-center">
+                                             <input onclick="show()" type="checkbox" value="" id="show-password">
+                                             <label for="show-password" class="checkbox fw-light ps-1">Show Password</label>
+                                        </div>
+                                        <span class="fw-light pt-3 font-two"> Already have an account? <a class="sign-button fw-normal" href="../index.html">Log in</a></span>
+                                   </div>
+                              </div>
+                              <a id="signButton" onclick="addUser()" class="login-button fs-5 font-login position-absolute d-flex justify-content-center align-items-center font-one fw-bold">Sign up</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="rulesBox">
+               <div class="rules d-flex justify-content-center align-items-center">
+                    <div id="alertBox" class="d-flex flex-column bg-white">
+                         <div class="rules-bg text-center d-flex flex-column align-items-center justify-content-center">
+                              <img src="../images/Animation - 1704068727712 (2).gif" alt="wrong">
+                         </div>
+                         <div class="rules-content d-flex flex-column align-items-center justify-content-evenly">
+                              <p class="px-2 text-center m-0 fw-light">Name must at least 3 letters</p>
+                              <p class="px-2 text-center m-0 fw-light">Email: example@gmail.com</p>
+                              <p class="px-2 text-center m-0 fw-light">Password must at least 8 characters, combination of letters, numbers and symbols</p>
+                              <button id="closeSignup" class="btn btn-outline-danger p-1">Close</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="successBox">
+               <div class="success d-flex justify-content-center align-items-center">
+                    <div id="alertBox" class="d-flex flex-column bg-white">
+                         <div class="success-bg text-center d-flex flex-column align-items-center justify-content-center">
+                              <img src="../images/Animation - 1704048585159.gif" alt="success">
+                         </div>
+                         <div class="success-content d-flex flex-column align-items-center justify-content-evenly">
+                              <p class="px-2 text-center m-0 fw-light">User added successfully</p>
+                              <a href="../index.html"><button class="btn btn-outline-success p-1">Login</button></a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+#warningBox,#successBox, #rulesBox{
+     display: none;
+}
+.warning,.success, .rules{
+     position: fixed;
+     background-color: rgba(0, 0, 0, 0.4);
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+}
+#alertBox{
+     width: 40%;
+     height: 35%;
+}
+.warning #alertBox .close-bg {
+     background-color: #c9525e;
+     height: 50%;
+     width: 100%;
+}
+.warning #alertBox .close-bg img{
+     height: 50%;
+     animation: close 1.2s infinite;
+}
+@keyframes close{
+     0%{
+          transform: scale(1)
+     }
+     50%{
+          transform: scale(1.2)
+     }
+     100%{
+          transform: scale(1)
+     }
+}
+.success #alertBox .success-bg{
+     background-color: #61c061;
+     height: 50%;
+     width: 100%;
+}
+.rules #alertBox .rules-bg{
+     background-color: #6FDBDC;
+     height: 35%;
+     width: 100%;
+}
+.success #alertBox .success-bg img{
+     height: 50%;
+}
+.rules #alertBox .rules-bg img{
+     height: 100%;
+}
+.warning #alertBox .close-content,.success #alertBox .success-content{
+     height: 50%;
+}
+.rules #alertBox .rules-content{
+     height: 65%;
+}
+.warning #alertBox .close-content p,.success #alertBox .success-content p{
+     font-size: 20px;
+}
+.rules #alertBox .rules-content p{
+     font-size: 15px;
+}
+.w-75{
+     width: 80%;
+}
+.alert{
+     display: none;
+}
+.form-control.is-valid{
+     background-image: url(../images/icons8-check-64.png);
+}
+.form-control.is-invalid{
+     background-image: url(../images/icons8-exclamation-32.png);
+}
+.form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+     outline: none;
+     box-shadow: none;
+}
+input{
+     background-color: transparent !important;
+     border: none !important;
+     color: white !important;
+}
+input:focus-visible{
+     outline: none !important;
+     box-shadow: none !important;
+}
+input::placeholder{
+     color: gainsboro !important;
+}
+.input{
+     border-bottom: 1px solid gainsboro;
+}
+input[type=checkbox]{
+     width: 10%;
+     height: 10%;
+     opacity: 0.6;
+     cursor: pointer;
+ }
+ 
+ input[type=checkbox]:checked{
+     opacity: 1;
+}
+a{
+     text-decoration: none;
+     color: #6FDBDC;
+     cursor: pointer;
+}
+a:hover{
+     text-decoration: underline;
+}
+.login-button:hover{
+     text-decoration: none;
+}
+.checkbox{
+     cursor: pointer;
+}
+                         /*start smart system */
+.login{
+     background-image: url(../images/industry-automotive-01.png);
+     background-size: cover;
+     height: 100vh;
+}
+.login .layer{
+     background-color: rgba(12, 38, 58, 0.7);
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+}
+.login .layer .bg-layer-one{
+     background-color: rgba(65 ,123 ,139, 0.3);
+     top: 24%;
+     bottom: 24%;
+     right: 22%;
+     left: 22%;
+}
+.login .layer .bg-layer-one .bg-layer-two{
+     background-color: rgba(65 ,123 ,139, 0.3);
+     top: -14%;
+     bottom: -14%;
+     right: 4%;
+     left: 4%;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three{
+     background-color: rgba(57, 107, 120, 0.9);
+     top: -9%;
+     bottom: -9%;
+     right: 5%;
+     left: 5%;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-content{
+     background-image: url(../images/industry-automotive-01.png);
+     background-size: cover;
+     background-position: center;
+     height: 45vh;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-content h6{
+     font-family: monospace;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-content h3{
+     font-family: serif;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-content img{
+     bottom: 0%;
+     width: 10%;
+     opacity: 0.7;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-content .content-layer{
+     background-color: rgba(12, 38, 58, 0.5);
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-form{
+     height: 65%;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-button{
+     background-color: #153C4E;
+     color: white;
+     bottom: -3%;
+     left: 40%;
+     right: 40%;
+     height: 8%;
+     transition: 0.4s;
+     font-family: monospace;
+}
+.login .layer .bg-layer-one .bg-layer-two .bg-layer-three .login-button:hover{
+     background-color: white;
+     color: #153C4E;
+}
+                    /*end smart system */
+
+                    /*start home page */
+.home{
+     background-image: url(../images/pexels-stein-egil-liland-3374210.jpg);
+     background-size: cover;
+     background-position: center;
+     height: 100vh;
+}
+.home .layer{
+     background-color: rgba(0, 0, 0, 0.2);
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+}
+.home .layer .container a{
+     color: azure;
+     font-family: 'Orbitron', cursive;
+}
+.home .home-content{
+     position:absolute;
+     left: 0;
+     right: 0;
+     background-color: #ffffff45;
+     box-shadow: 0px 0px 10px 10px #ffffff45;
+}
+.home .layer img{
+     width: 9%;
+     padding-bottom: 14px;
+}
+.home .layer h5{
+     font-size: 60px;
+     font-family: 'Orbitron', cursive;
+}
+                    /*end home page */

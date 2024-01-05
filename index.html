@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="shortcut icon" href="images/icons8-login-32 (1).png" type="image/x-icon">
+     <link rel="stylesheet" href="css/all.min.css">
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/media.css">
+     <title>Login</title>
+</head>
+<body>
+     <div class="login position-relative">
+          <div class="layer position-absolute">
+               <div class="bg-layer-one position-absolute">
+                    <div class="bg-layer-two position-absolute">
+                         <div class="bg-layer-three position-absolute d-flex flex-column">
+                              <div class="login-content position-relative">
+                                   <div class="content-layer text-white text-center position-absolute d-flex flex-column justify-content-center align-items-center">
+                                        <h6 class="fs-1 pb-3 fw-normal">WELCOME BACK!</h6>
+                                        <h3 class="fs-5 w-50 fw-normal">Enter your personal information to login</h3>
+                                   </div>
+                              </div>
+                              <div class="login-form pb-4 text-white d-flex flex-column justify-content-center align-items-center"> 
+                                   <div class="w-75 fs-5">
+                                        <div class="input email font-one pb-1 d-flex align-items-center">
+                                             <i class="fa-solid fa-envelope pe-2"></i>
+                                             <input id="loginEmail" class="w-100 form-control" type="email" placeholder="Email">
+                                        </div>
+                                        <div class="input password d-flex align-items-center pt-3 pb-1 font-one">
+                                             <i class="fa-solid fa-lock pe-2"></i>
+                                             <input id="loginPassword" class="w-100 form-control password" value="" type="password" placeholder="Password">
+                                        </div>
+                                   </div>
+                                   <div class="w-75 d-flex flex-wrap justify-content-between align-items-center">
+                                        <div class="font-two pt-3 d-flex justify-content-between align-items-center">
+                                             <input onclick="show()" type="checkbox" name="" id="show-password">
+                                             <label for="show-password" class="checkbox fw-light ps-1">Show Password</label>
+                                        </div>
+                                        <span class="fw-light pt-3 font-two"> Don't have an account? <a class="sign-button fw-normal" href="signup/signup.html">Sign up</a></span>
+                                   </div>
+                              </div>
+                              <a class="btn login-button fs-5 font-login position-absolute d-flex justify-content-center align-items-center font-one fw-bold rounded-0">Login</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <div id="warningBox">
+               <div class="warning d-flex justify-content-center align-items-center">
+                    <div id="alertBox" class="d-flex flex-column bg-white">
+                         <div class="close-bg text-center d-flex flex-column align-items-center justify-content-center">
+                              <img src="images/icons8-x.svg" alt="wrong">
+                         </div>
+                         <div class="close-content d-flex flex-column align-items-center justify-content-evenly">
+                              <p class="px-2 text-center m-0 fw-light">Invaild Email or Wrong Password</p>
+                              <button id="closeLogin" class="btn btn-outline-danger p-1">Close</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+
+
+     <script src="login/js/bootstrap.bundle.min.js"></script>
+     <script src="login/js/main.js"></script>
+</body>
+</html>

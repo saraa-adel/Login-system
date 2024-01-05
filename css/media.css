@@ -1,0 +1,114 @@
+@media all and (max-width:1090px){
+     .login .layer .bg-layer-one{
+          top: 25%;
+          bottom: 25%;
+          right: 16%;
+          left: 16%;
+     }
+}
+@media all and (max-width:950px){
+     .login .layer .bg-layer-one{
+          top: 28%;
+          bottom: 28%;
+          right: 13%;
+          left: 13%;
+     }
+}
+@media all and (max-width:800px){
+     .login .layer .bg-layer-one{
+          top: 25%;
+          bottom: 25%;
+          right: 9%;
+          left: 9%;
+     }
+     
+}
+@media all and (max-width:700px){
+     .login .layer .bg-layer-one{
+          top: 26%;
+          bottom: 26%;
+          right: 5%;
+          left: 5%;
+     }
+     .font-one{
+          font-size: 19px !important;
+     }
+     .font-two{
+          font-size: 15.5px !important;
+     }
+     .font-login{
+          font-size: 14px !important;
+     }
+     .login .layer .bg-layer-one .bg-layer-two .login-button{
+          left: 39%;
+          right: 39%;
+          height: 7%;
+     }
+     button{
+          font-size: 12px !important;
+     }
+}
+@media all and (max-width:500px){
+     .font-one{
+          font-size: 14px !important;
+     }
+     .font-two{
+          font-size: 13px !important;
+     }
+     .font-login{
+          font-size: 10px !important;
+     }
+     .login .layer .bg-layer-one .bg-layer-two .login-button{
+          left: 35% !important;
+          right: 35% !important;
+          height: 6% !important;
+     }
+     .warning #alertBox .close-bg,.success #alertBox .success-bg{
+          height: 37%;
+     }
+     .warning #alertBox .close-content,.success #alertBox .success-content{
+          height: 63%;
+     }
+     .warning #alertBox .close-content p,.success #alertBox .success-content p{
+          font-size: 18px;
+     }
+     .rules #alertBox .rules-content p{
+          font-size: 10px;
+     }
+     button{
+          font-size: 10px !important;
+     }
+     .home .layer h5{
+          font-size: 35px;
+     }
+}
+@media all and (max-width:300px){
+     .font-one{
+          font-size: 12px !important;
+     }
+     .font-two{
+          font-size: 10px !important;
+     }
+     .font-login{
+          font-size: 12px !important;
+     }
+     .warning #alertBox .close-bg,.success #alertBox .success-bg{
+          height: 30%;
+     }
+     .warning #alertBox .close-content,.success #alertBox .success-content{
+          height: 70%;
+     }
+     .warning #alertBox .close-content p,.success #alertBox .success-content p{
+          font-size: 17px;
+     }
+     .rules #alertBox .rules-content p{
+          font-size: 8px;
+     }
+     button{
+          font-size: 8px !important;
+     }
+     .home .layer h5{
+          font-size: 29px;
+     }
+}
+
